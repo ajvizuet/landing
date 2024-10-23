@@ -1,0 +1,21 @@
+.main-btn {
+    margin: 2rem auto;
+    text-align: center;
+    padding: .6rem;
+    border-radius: 5px;
+    color: #473800;
+    background-color: #fff2bf;
+    max-width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+.main-btn:hover {
+    cursor: pointer;
+    background-color: #473800;
+    color: #fff2bf;
+}
+
+.max-height-img {
+    max-height: 400px;
+    min-width: 350px;
+}

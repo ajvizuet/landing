@@ -22,6 +22,8 @@ CSS STRUCTURE:
 2. GENERAL TYPOGRAPHY
 
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
+
 body {
   --heading-font: "Marcellus", Roboto, sans-serif;
   --heading-font-weight: 400;
@@ -31,7 +33,7 @@ body {
   --swiper-theme-color: #8C907E;
 
   /* bootstrap */
-  --bs-body-font-family: "Jost", Roboto, sans-serif;
+  --bs-body-font-family: "Arima", system-ui;
   --bs-body-font-size: 18px;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -290,6 +292,10 @@ a {
 /* navbar */
 .navbar.fixed-top {
   transition: background-color 0.6s ease-out;
+}
+
+.bg-home {
+  background-image: url('images/img/vecteezy_vector-seamless-pattern-with-coffee-beans-on-beige_11430848.jpg');
 }
 
 /* slideshow */
