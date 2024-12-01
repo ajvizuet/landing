@@ -1,3 +1,7 @@
+/*
+    Hoja de estilos personalizada complementaria
+*/
+
 .main-btn {
     margin: 2rem auto;
     text-align: center;
@@ -11,11 +15,175 @@
 
 .main-btn:hover {
     cursor: pointer;
-    background-color: #473800;
-    color: #fff2bf;
+    background-color: #c8be97;
+    color: #473800;
 }
 
 .max-height-img {
     max-height: 400px;
     min-width: 350px;
+}
+
+.coffee-img {
+    max-width: 350px;
+}
+
+.flip-card {
+    width: 350px;
+    height: 500px;
+    perspective: 1000px;
+    border-radius: 5px;
+}
+
+.flip-card:hover {
+    cursor: pointer;
+}
+
+.flip-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.6s;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card-back {
+    background-color: #664200;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.flip-card h3 {
+    color: #fff2bf;
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+} 
+
+.fact-section {
+    background-color: #c8be97;
+    padding: 2rem;
+}
+
+.fact-img {
+    height: 500px;
+    border-radius: 60%;
+    box-shadow: -15px 15px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.fact-text {
+    color: black;
+    max-width: 80%;
+}
+
+.fact-h3 {
+    color: #473800;
+}
+
+#tazas .card > img {
+    max-width: 300px;
+    border-radius: 5px 5px 0 0;
+}
+
+.mug-card {
+    transition: transform 0.3s ease;
+}
+
+.mug-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 10px #412a00d8;
+    cursor: pointer;
+}   
+
+@media (max-width: 768px) {
+    .mug-card {
+        width: 80%;
+    }
+    .mug-card img {     
+        max-width: 100% !important;
+        width: 100%;
+    }
+}
+
+.cm-container {
+    min-height: 700px;
+    margin-inline: 0;
+}
+
+.cm {
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.cm::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.cm:hover {
+    transform: scale(1.05);
+    z-index: 5;
+    box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.677);
+}
+
+.cm-btn {
+    position: absolute;
+    padding: .5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: #5a5a5a7a;
+    border: 1px solid rgba(125, 125, 125, 0.401);
+    border-radius: 5px;
+    color: white;
+    z-index: 10;
+    transition: all 0.2s ease;
+}
+
+.cm-btn:hover {
+    background-color: #35353575;
+}
+
+.suscriptions {
+    background-color: #39220a;
+}
+
+.suscriptions h3, .suscriptions h4{
+    color: wheat;
 }
